@@ -34,11 +34,14 @@ public class FollowPlayer : MonoBehaviour
     private Vector3 RotOffset;
     void Update()
     {
-        if(!isPlayerSet){SetPlayer();
-            //return;
+        if(Player==null){SetPlayer();
+            // return;
         }
-        this.transform.position = Player.transform.position + PosOffset;
-        // Camera.transform.rotation = Quaternion.LookRotation(Player.transform.position, Vector3.up);
-        cam.transform.LookAt(Player.position);
+        else
+        {
+            this.transform.position = Player.transform.position + PosOffset;
+            // Camera.transform.rotation = Quaternion.LookRotation(Player.transform.position, Vector3.up);
+            cam.transform.LookAt(Player.position);
+        }
     }
 }
