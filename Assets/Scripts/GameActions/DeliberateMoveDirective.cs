@@ -85,11 +85,11 @@ namespace GameActions
             Debug.Log("Locations are: ");
             foreach (var (item1, item2) in locations)
             {
-               Debug.Log(item1+ " " + item2); 
+               // Debug.Log(item1+ " " + item2); 
             }
             if (locations.Contains(location))
             {
-                Debug.Log("My path might be invalid");
+                // Debug.Log("My path might be invalid");
                 //Check which of my directives are movement related
                 Dirty = true;
             }

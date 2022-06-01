@@ -40,7 +40,7 @@ public class TurnGreenOnPlayerTurn : MonoBehaviour
 
     public void ChangeColor(bool PlayerTurn, int TotalTicks)
     {
-        Debug.Log("Changing color maybe");
+        // Debug.Log("Changing color maybe");
         PathList = Player.PathList;
         bool changed = false;
         //First assign player turn material
